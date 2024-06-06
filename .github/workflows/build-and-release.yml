@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: zed-windows
-          path: target/release/zed.exe
+          path: target/release/Zed.exe
 
   release:
     needs: build
@@ -62,5 +62,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: target/release/Zed.exe
-          asset_name: zed.exe
+          asset_name: Zed.exe
           asset_content_type: application/octet-stream
