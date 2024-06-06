@@ -62,6 +62,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: target/release
+          asset_path: target/release/Zed.exe
           asset_name: Zed.exe
           asset_content_type: application/octet-stream
